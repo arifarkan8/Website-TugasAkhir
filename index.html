@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderful Indonesia - Beranda</title>
+    <link rel="stylesheet" href="css/instyles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo">
+                WONDERFUL <span class="highlight">INDONESIA</span>
+            </div>
+
+            <ul class="menu" id="navMenu">
+                <li><a href="#" class="active">Beranda</a></li>
+                <li><a href="destinasi.html">Destinasi</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="galeri.html">Galery</a></li>
+                <li><a href="kontak.html" class="btn-contact">Kontak</a></li>
+            </ul>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main-layout">
+
+        <main class="content-left">
+            <div class="card main-card">
+                <div class="badge">EKSKLUSIF</div>
+                <h1 class="main-title">Menyelami Keajaiban Raja Ampat: Permata di Ujung Timur</h1>
+
+                <div class="meta-info">
+                    <span>&#128197; 10 Des 2025</span> <span>&#128100; Admin</span> <span>&#128205; Papua Barat</span>
+                </div>
+
+                <div class="media-frame">
+                    <video controls autoplay muted loop>
+                        <source src="gambar/rajaampat.mp4" type="video/mp4">
+                        Video tidak didukung.
+                    </video>
+                </div>
+
+                <div class="article-content">
+                    <p class="intro">Kepulauan Raja Ampat adalah surga dunia nyata yang terletak di jantung Segitiga
+                        Terumbu Karang dunia. Tempat di mana alam melukis keindahan yang tak terhingga.</p>
+                    <p>Bagi para penyelam, Raja Ampat dikenal sebagai "Perpustakaan Hidup" dari koleksi terumbu karang
+                        dan biota laut paling beragam.</p>
+
+                    <a href="CodeHtml2/rajaAmpat.html" class="btn-primary">
+                        Baca Selengkapnya &rarr;
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar-right">
+            <div class="section-header">
+                <h3>Destinasi Populer</h3>
+                <div class="underline"></div>
+            </div>
+
+            <a href="CodeHtml2/borobudur.html" class="sidebar-link">
+                <div class="side-item">
+                    <div class="img-box">
+                        <img src="gambar/borobudur.jpg" alt="Borobudur">
+                    </div>
+                    <div class="text-box">
+                        <span class="category">Sejarah</span>
+                        <h4>Kemegahan Candi Borobudur Saat Sunrise</h4>
+                    </div>
+                </div>
+            </a>
+
+            <a href="CodeHtml2/terasering.html" class="sidebar-link">
+                <div class="side-item">
+                    <div class="img-box">
+                        <img src="gambar/sawahTerasering.jpg" alt="Terasering">
+                    </div>
+                    <div class="text-box">
+                        <span class="category">Alam</span>
+                        <h4>Hijau Menenangkan di Ubud Bali</h4>
+                    </div>
+                </div>
+            </a>
+
+            <a href="CodeHtml2/danauToba.html" class="sidebar-link">
+                <div class="side-item">
+                    <div class="img-box">
+                        <img src="gambar/toba.jpg" alt="Danau Toba">
+                    </div>
+                    <div class="text-box">
+                        <span class="category">Danau</span>
+                        <h4>Legenda Danau Toba & Samosir</h4>
+                    </div>
+                </div>
+            </a>
+
+            <a href="CodeHtml2/takapala.html" class="sidebar-link">
+                <div class="side-item">
+                    <div class="img-box">
+                        <img src="gambar/takapala.jpg" alt="Takapala">
+                    </div>
+                    <div class="text-box">
+                        <span class="category">Air Terjun</span>
+                        <h4>Kesegaran Air Terjun Takapala</h4>
+                    </div>
+                </div>
+            </a>
+
+            <div class="subscribe-card">
+                <h4>Dapatkan Update Wisata</h4>
+                <p>Masukkan email untuk berita terbaru.</p>
+                <input type="email" id="emailLangganan" placeholder="Email kamu disini...">
+                <button onclick="prosesLangganan()">Langganan</button>
+            </div>
+
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Wonderful Indonesia.</p>
+    </footer>
+
+    <script src="js/inscript.js"></script>
+
+</body>
+</html>

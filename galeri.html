@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Wonderful Indonesia</title>
+    <link rel="stylesheet" href="css/galstyles.css">
+    <link rel="stylesheet" href="css/instyles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo">WONDERFUL <span class="highlight">INDONESIA</span></div>
+            <ul class="menu" id="navMenu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="destinasi.html">Destinasi</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="galery.html" class="active">Galery</a></li>
+                <li><a href="kontak.html" class="btn-contact">Kontak</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main-layout">
+
+        <main class="content-left">
+            <div class="section-title-page">
+                <h1 class="main-title">Galeri Nusantara</h1>
+                <p>Kumpulan momen terbaik dari keindahan alam Indonesia.</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="gambar/borobudur.jpg" alt="Borobudur">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gambar/sawahTerasering.jpg" alt="Terasering">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gambar/gugusanKarst.jpg" alt="Karst">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gambar/toba.jpg" alt="Toba">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gambar/bromo.jpg" alt="Bromo">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gambar/takapala.jpg" alt="Takapala">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gambar/labuanBajo.jpg" alt="Labuan Bajo">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gambar/aquarium.jpg" alt="Ancol">
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar-right">
+
+            <div class="section-header">
+                <h3>Kategori Foto</h3>
+                <div class="underline"></div>
+            </div>
+            <div class="tips-box">
+                <ul class="tips-list">
+                    <li><strong>&#127956; Pegunungan</strong>
+                        <p>Bromo, Semeru, Rinjani</p>
+                    </li>
+                    <li><strong>&#127958; Pantai & Laut</strong>
+                        <p>Raja Ampat, Labuan Bajo</p>
+                    </li>
+                    <li><strong>&#127963; Kota & Wisata</strong>
+                        <p>Jakarta, Borobudur</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="subscribe-card"
+                style="margin-top: 30px; background: white; border: 1px solid #ddd; color: #333; padding: 20px; border-radius: 8px;">
+                <h4 style="color:#008080; margin-bottom: 10px;">Bagikan Momenmu</h4>
+                <p style="color:#666; font-size:12px; margin-bottom: 15px;">Upload foto liburanmu agar bisa kami review.
+                </p>
+
+                <input type="file" id="inputFoto" accept="image/*" onchange="tampilkanPreview()"
+                    style="font-size: 12px; margin-bottom: 10px; width: 100%;">
+
+                <div id="areaPreview" style="display:none; margin-bottom: 15px; border: 1px dashed #ccc; padding: 5px;">
+                    <img id="gambarPreview" src="" alt="Preview"
+                        style="width: 100%; border-radius: 5px; height: 150px; object-fit: cover;">
+                    <p style="font-size: 10px; color: green; margin-top: 5px; text-align: center;">*Preview Foto Siap
+                        Kirim</p>
+                </div>
+
+                <button onclick="simulasiKirim()"
+                    style="background:#008080; color:white; width:100%; padding: 10px; border:none; border-radius: 4px; cursor: pointer; font-weight: bold;">
+                    Kirim Foto
+                </button>
+            </div>
+
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Wonderful Indonesia.</p>
+    </footer>
+
+    <script src="js/gal.js"></script>
+</body>
+
+</html>
